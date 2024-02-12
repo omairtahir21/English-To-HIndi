@@ -1,0 +1,131 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="?attr/actionBarTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+
+            <ImageView
+                android:id="@+id/BACKDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:layout_gravity="start"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"/>
+
+
+            <TextView
+                android:id="@+id/textViewDetailsInAppBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_unfav"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:visibility="visible"
+                android:onClick="onFavoriteIconClicked" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textViewEnglishWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBar"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="61dp"
+        android:text="English Word"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textViewEnglishWord"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/textViewHindiWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEnglishWord"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:text="Hindi Word"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textViewHindiWord"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/textViewEnglishMeans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHindiWord"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:text="English Meaning"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textViewEnglishMeans"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/textViewHindiMeans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEnglishMeans"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="46dp"
+        android:text="Hindi Meaning"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textViewHindiMeans"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/textViewWordType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHindiMeans"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="53dp"
+        android:text="Word Type"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textViewWordType"
+        android:background="#000000" />
+
+</RelativeLayout>
